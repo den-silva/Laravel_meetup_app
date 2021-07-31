@@ -34,5 +34,11 @@ Route::get('/contact', function () {
 });
 
 Route::get('/product', function () {
-    return view('product');
+    $busca = request('search');
+
+    return view('product', ['busca'=> $busca]); // INSERIR NA URL, APÓS O FINAL DA ROTA, O PARÂMETRO ?search=algo aqui
+});
+
+Route::get('/product_teste/{id?}', function ($id = null) {
+    return view('product', ['id'=> $id]);
 });
