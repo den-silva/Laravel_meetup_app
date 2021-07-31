@@ -36,7 +36,18 @@
     @else
         <p>O nome não é Denilson</p>
     @endif
+
+    <!-- LAÇO DE REPETIÇÃO -->
+
+    @for($i = 0; $i < count($arr); $i++)
+            <p>{{$arr[$i]}}</p>
+    @endfor
     
-        
+    <!-- IMPRIMIR VARIÁVEIS COM BLADE -->
+    {{-- Este é o comentário com blade, não aparece no HTML da página--}}
+    @php
+        $name = 'denilson 2';
+        echo $name;
+    @endphp
     </body>
 </html>
