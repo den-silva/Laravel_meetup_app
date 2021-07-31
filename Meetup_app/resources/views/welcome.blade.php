@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="js/scripts.js"></script>
-    </head>
-    <body class="antialiased">
+@extends('layouts.main')
+@section('title', 'MeetUp App')
+@section('content')
 
     <h1>hello world </h1>
     @if(10 > 15)
@@ -41,5 +33,4 @@
     @for($i = 0; $i < count($nomes); $i++)
             <p>{{$nomes[$i]}}</p>
     @endfor
-    </body>
-</html>
+@endsection
