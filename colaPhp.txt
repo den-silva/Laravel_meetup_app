@@ -13,3 +13,16 @@ AO CRIAR UM CONTROLLER PELA PRIMEIRA VEZ, IMPORTAR O CONTROLLER PARA O ARQUIVO D
 
 
 fazer controllers e rotas para contatos e produtos 
+
+Migrations
+
+para migrar uma tabela para o banco de dados, execute o comando abaixo
+
+php artisan migrate
+
+php artisan migrate:reset -> remove todas as alterações feitas na tabela, trazendo-a ao status original
+
+php artisan migrate:status -> mostra o status das migrações atuais, se já foram enviadas para o banco, se foram removidas etc.
+
+php artisan migrate:refresh -> exclui e refaz todas as migrações para a tabela (EXCLUI TODOS OS DADOS DA TABELA, CUIDADO)
+
