@@ -13,21 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $nome = "Denilson";
-    $idade = 31;
-    $arr = [1,2,3,4,5];
+//IMPORTANDO CONTROLLERS PARA O ARQUIVO DE ROTAS
+use App\Http\Controllers\EventController;
 
-    $nomes = ['Denilson','João','Maria','Carlos','Gabriel'];
+Route::get('/', [EventController::class, 'index']); // retornará o método index da classe EventController
 
-    return view('welcome',
-        [
-            'nome' => $nome, 
-            'idade' => $idade,
-            'arr' => $arr,
-            'nomes' => $nomes
-        ]);
-});
+Route::get('/events/create', [EventController::class, 'create']); 
 
 Route::get('/contact', function () {
     return view('contact');

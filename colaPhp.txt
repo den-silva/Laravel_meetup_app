@@ -1,0 +1,15 @@
+iniciar servidor : php artisan serve
+
+Controllers : app/http/controllers
+Models : app/models
+Views : resources/views
+Layouts : resources/views/layouts
+rotas : routes
+banco de dados : database/migrations
+css, js e imagens : public
+
+
+AO CRIAR UM CONTROLLER PELA PRIMEIRA VEZ, IMPORTAR O CONTROLLER PARA O ARQUIVO DE ROTAS (WEB.PHP), PARA QUE ELE POSSA RETORNAR O VALOR DAS FUNÇÕES DENTRO DA CLASSE CONTROLLER CRIADA.
+
+
+fazer controllers e rotas para contatos e produtos 

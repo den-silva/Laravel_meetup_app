@@ -29,7 +29,7 @@
                             <a href="/" class="nav-link">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Criar</a>
+                            <a href="/events/create" class="nav-link">Criar</a>
                         </li>
                         <li class="nav-item">
                             <a href="/" class="nav-link">Entrar</a>
@@ -41,10 +41,13 @@
                 </div>
             </nav>
         </header>
+        <img src="img/palestra.jpg" alt="">
+
         @yield('content')
-    
+        <footer>
+            <p>MeetUp App &copy 2021</p>
+        </footer>
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
-    <footer>
-        <p>MeetUp App &copy 2021</p>
-    </footer>
+    
 </html>
