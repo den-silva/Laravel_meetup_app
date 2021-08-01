@@ -35,7 +35,11 @@
                             <a href="/" class="nav-link">Entrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Cadastro</a>
+                            <a href="/contacts/create" class="nav-link">Cadastro</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/products/create" class="nav-link">Produtos</a>
                         </li>
                     </ul>
                 </div>
