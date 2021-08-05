@@ -75,4 +75,8 @@ Have Fun !!!
 
 You must to install XAMPP and create your project inside the htdocs directory
 
+You must update your composer app, with the comando line above in your terminal:
+
+composer update
+
 
