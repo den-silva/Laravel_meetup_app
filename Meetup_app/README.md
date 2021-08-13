@@ -79,4 +79,6 @@ You must update your composer app, with the comando line above in your terminal:
 
 composer update
 
+And finally, you should create a database in phpMyAdmin with the same name of the .env file assigned.
+
 

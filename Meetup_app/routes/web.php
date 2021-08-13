@@ -19,7 +19,8 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ContactController;
 
 Route::get('/', [EventController::class, 'index']); // retornará o método index da classe EventController
-Route::get('/events/create', [EventController::class, 'create']); 
+Route::get('/events/create', [EventController::class, 'create']);
+Route::post('/events', [EventController::class, 'store']);
 
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/create', [ProductController::class, 'create']);
