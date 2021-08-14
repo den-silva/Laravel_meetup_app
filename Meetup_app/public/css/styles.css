@@ -144,6 +144,15 @@ img{
 
 }
 
+.msg{
+    background-color: #d4edda;
+    color: #155724;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
 
 /* Footer page*/
 footer{
